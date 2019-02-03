@@ -1,0 +1,29 @@
+---
+layout: post
+title: Debugging Tool&#58 Sentinel Value
+postAuthor: Amy
+authorTwitter: https://twitter.com/amyb008
+gravatar: https://1.gravatar.com/avatar/d44fe63cf420551f2b70463077b14f06
+---
+<p>
+Today's project was working through some bugs and unexpected behavior in my JavaScript project which is a to-do-list. The tutorial is <a href="https://watchandcode.com/p/practical-javascript">Practical JavaScript</a> at Watch and Code. I'm currently working through the Version 9 modules. 
+</p>
+
+<h4>The problem:</h4>
+<p>
+It took me a while to figure out what was going on, but after getting absolutly stumped, I asked for help. My helper decided to introduce a sentinel value to my code, not realizing I had no idea what a sentinel value was. As that value populated into my code, my blank stare was a good indicator of a knowledge gap; it wasn't the reaction expected. So we had a lovely chat about the value of this debugging method, and how it's common and even good to use values that would otherwise not be valid. Xbox One users recently expirenced a <a href="http://www.eurogamer.net/articles/2017-07-19-xbox-one-users-plagued-by-bizarre-my-little-pony-message" target="_blank">rather strange error message referencing My Little Pony</a>, which was of course a sentinel value intended for internal use only. 
+</p>
+
+<h4>What I learned:</h4>
+<p>
+Because my sentinel value wasn't getting overwritten, it was a good indicator I should examine my code that should be repalcing said value. After some examination there were a few problems, including a problamatic line that reset the value to another before I used it and a capital letter that caused the computer to think I wanted to use a different value (whoops!). 
+</p>
+
+<p>
+I also learned the value of this tool, which I'm excited to add to my toolbox. It doesn't matter when you assign a value to empty quotation marks if you plan to overwrite that value anyway, but in the future, I'll probably throw  in a sentinel value as I found its presence very helpful once I knew how to use it.
+</p>
+
+<h4>Additonal reading:</h4>
+<p>
+<a href="https://en.wikipedia.org/wiki/Sentinel_value">Sentinel value</a> | Wikipedia 
+</p>

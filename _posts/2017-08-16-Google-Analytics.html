@@ -1,0 +1,24 @@
+---
+layout: post
+title: Adding Google Analytics
+postAuthor: Amy
+authorTwitter: https://twitter.com/amyb008
+gravatar: https://1.gravatar.com/avatar/d44fe63cf420551f2b70463077b14f06 
+---
+<p>
+Jekyll is a static site generator you can host on GitHub for free, and great if you're looking for a simple, no frills blog, it's great. But lets be honest, while I want a mostly basic blog site, I also want to explore if some frills can be added.
+</p>
+
+<p>
+A fellow project blogging buddy decided to go with WordPress over other options is because WordPress has some pretty awesome analytics available. I'm familiar with the analytics provided via WordPress, as I've launched a blog through the site, and find it interesting to see what people are doing, how they're being refereed, and if they click on other articles. I also recognize that this information could be valuable to anyone who would like to launch a website (including myself) so I decided to see what it took to add Google Analytics to my blog.
+</p>
+
+
+<h4>Installation</h4>
+<p>
+Installation of Google Analytics was a breeze. Google has made it easy to add this feature, providing a straightforward form to fill out. You can create an analytics file into your _includes folder. Then you just add the liquid code for your analytics file into your head file. Finally, you add your unique tracking code to the _config file.
+</p>
+
+<p>
+Since I'm new to using Jekyll, I looked around to see if there were any details that might be worth considering noted by others. I found some great thoughts from <a href="desiredpersona.com/google-analytics-jekyll/" target="_blank" rel="noopener">Desired Persona</a> who recommended setting your analytics tracking code to generate only if you're in production. Since the default on the local server is development, this prevents the code from generating if you're testing locally on the server. This is a good thing, since you don't want to bungle your analytics stats by giving a local test the equal value of a unique visitor.
+</p>
